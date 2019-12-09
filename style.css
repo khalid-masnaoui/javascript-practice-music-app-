@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+#app {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    height: 100vh;
+}
+
+header {
+    margin-top: 50px;
+}
+
+header h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+header h3 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.visuals {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.pads {
+    display: flex;
+    flex-direction: row;
+    align-items: centre;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pad {
+    height: 100px;
+    flex: 1;
+}
+
+.pad:nth-child(1) {
+    background-color: green;
+}
+
+.pad:nth-child(2) {
+    background-color: yellow;
+}
+
+.pad:nth-child(3) {
+    background-color: blue;
+}
+
+.pad:nth-child(4) {
+    background-color: red;
+}
+
+.pad:nth-child(5) {
+    background-color: purple;
+}
+
+.pad:nth-child(6) {
+    background-color: grey;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visuals>div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
